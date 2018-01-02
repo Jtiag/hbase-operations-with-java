@@ -1,4 +1,4 @@
-package cn.ngsoc.hbase;
+package main.java.hbase;
 
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;

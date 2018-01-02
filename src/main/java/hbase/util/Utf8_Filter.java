@@ -1,4 +1,4 @@
-package cn.ngsoc.hbase.util;
+package main.java.hbase.util;
 
 public class Utf8_Filter {
 	public static String stripNonCharCodepoints(String input) {

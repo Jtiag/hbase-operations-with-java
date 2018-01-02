@@ -1,7 +1,7 @@
-package cn.ngsoc.hbase;
+package main.java.hbase;
 
-import cn.ngsoc.hbase.util.HBaseUtil;
-import cn.ngsoc.hbase.util.ThreadPoolUtil;
+import main.java.hbase.util.HBaseUtil;
+import main.java.hbase.util.ThreadPoolUtil;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.slf4j.Logger;
@@ -19,8 +19,8 @@ import java.util.concurrent.Future;
 public class HBaseServiceImpl extends AbstractHBaseService{
 
     private static final Logger logger = LoggerFactory.getLogger(HBaseServiceImpl.class);
-
-    private ThreadPoolUtil threadPool= ThreadPoolUtil.init();       // 初始化线程池
+    // 初始化线程池
+    private ThreadPoolUtil threadPool= ThreadPoolUtil.init();
 
     @Override
     public void put(String tableName, Put put, boolean waiting) {

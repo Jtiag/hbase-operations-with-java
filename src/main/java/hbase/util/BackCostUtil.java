@@ -1,4 +1,4 @@
-package cn.ngsoc.hbase.util;
+package main.java.hbase.util;
 
 /**
  * Created by zhenjie.wang on 2015/8/13.

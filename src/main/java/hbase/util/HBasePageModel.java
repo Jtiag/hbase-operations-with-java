@@ -1,4 +1,4 @@
-package cn.ngsoc.hbase.util;
+package main.java.hbase.util;
 
 import java.io.Serializable;
 import java.text.DecimalFormat;

@@ -1,4 +1,4 @@
-package cn.ngsoc.hbase.util;
+package main.java.hbase.util;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

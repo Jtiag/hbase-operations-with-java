@@ -1,6 +1,6 @@
-package cn.ngsoc.hbase;
+package main.java.hbase;
 
-import cn.ngsoc.hbase.util.Md5Util;
+import main.java.hbase.util.Md5Util;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.util.Bytes;
@@ -18,7 +18,7 @@ public class HBase {
     private HBase() {}
 
 //    private static volatile HBase instance = null;
-    private static HBaseService hBaseService;
+    private static main.java.hbase.HBaseService hBaseService;
 
 //    public static HBase getInstance() {
 //        if (instance == null) {
@@ -33,7 +33,7 @@ public class HBase {
 
     static {
         // TODO  根据配置文件来选择  HBase 官方 API 还是第三方API
-        hBaseService = new HBaseServiceImpl();
+        hBaseService = new main.java.hbase.HBaseServiceImpl();
 //        hBaseService = new AsyncHBaseServiceImpl();
     }
 
@@ -54,7 +54,7 @@ public class HBase {
      * @param puts  待提交参数
      * @param waiting  是否等待线程执行完成  true 可以及时看到结果, false 让线程继续执行，并跳出此方法返回调用方主程序
      */
-    public static void put(String tableName, List<Object> puts, boolean waiting) {
+    public static void put(String tableName, List<Put> puts, boolean waiting) {
         hBaseService.batchPut(tableName, puts, waiting);
     }
 
